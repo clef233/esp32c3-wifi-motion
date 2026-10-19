@@ -2,7 +2,7 @@
 
 **基于 ESP32-C3 的wifi模块实现运动检测**
 
-利用 Wi-Fi 信道状态信息（CSI）的变化判断周围是否有移动。板子完成采集和计算，建立本地http服务器，浏览器结果。
+利用 Wi-Fi 信道状态信息（CSI）的变化判断周围是否有移动。板子完成采集和计算，建立本地http服务器，浏览器显示结果可视化
 
 > An experimental ESP32-C3 Wi-Fi CSI motion detector with an on-device web dashboard. No camera or dedicated motion sensor required.
 
