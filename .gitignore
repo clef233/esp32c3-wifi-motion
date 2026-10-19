@@ -1,0 +1,14 @@
+build/
+sdkconfig
+sdkconfig.old
+sdkconfig.*.old
+main/wifi_config.h
+.vscode/
+.idea/
+.env
+.env.*
+__pycache__/
+*.pyc
+*.log
+.DS_Store
+Thumbs.db

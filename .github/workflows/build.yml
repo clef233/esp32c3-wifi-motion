@@ -1,0 +1,23 @@
+name: ESP-IDF build
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: espressif/idf:v6.0.2
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build for ESP32-C3 with example credentials
+        shell: bash
+        run: |
+          . "$IDF_PATH/export.sh"
+          cp main/wifi_config.example.h main/wifi_config.h
+          idf.py set-target esp32c3
+          idf.py build
